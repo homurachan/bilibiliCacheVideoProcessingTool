@@ -17,6 +17,9 @@ python3 bilibili_video_tool.py -d [Numbered Dir]
 `[Numbered Dir]`为数字编号目录的路径（绝对、相对路径均可）
 
 **使用方法：**
+
+需要安装colorama库，使用 `pip install colorama` 安装。
+
 ```py
 usage: bilibili_video_tool.py [options]
 
@@ -28,7 +31,7 @@ optional arguments:
 ```
 
 # 新功能
-可自动转换danmaku.xml为对应的.ass字幕。
+1. 可自动转换danmaku.xml为对应的.ass字幕。配合最新版的MPC-HC: https://github.com/clsid2/mpc-hc/releases 即可得到近似dandanplay的效果。
 
 需要从https://github.com/m13253/danmaku2ass 下载danmaku2ass.py。
 
@@ -38,5 +41,7 @@ optional arguments:
 
 ffmpeg.exe与ffprobe.exe需要在PATH环境变量中，可以直接把它们放在c:\windows\system32文件夹下。
 
-更改了一部分代码，以适配老版本的视频缓存。
+2. 更改了一部分代码，以适配老版本的视频缓存。
+
+3. 在封装视频的时候不再转码。
 
